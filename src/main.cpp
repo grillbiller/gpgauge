@@ -107,7 +107,7 @@ void setup() {
   digitalWrite(TFT_CS5, HIGH);
 
   selectScreen(TFT_CS2); tft.init(); digitalWrite(TFT_CS2, HIGH);
-  WiFi.begin("WrumWrum2", "A407188ecd3");
+  WiFi.begin("", "");
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
